@@ -1,0 +1,62 @@
+.button {
+    -fx-font-weight: bold;
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-radius: 14;
+    -fx-font-size: 18;
+}
+
+
+.button:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-text-fill: green;
+    -fx-border-color: green;
+    -fx-border-width: 2;
+    -fx-background-radius: 15;
+    -fx-border-radius: 14;
+    -fx-font-size: 18;
+}
+
+
+.button:pressed {
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-text-fill: green;
+    -fx-border-color: green;
+    -fx-border-width: 2;
+    -fx-background-radius: 15;
+    -fx-border-radius: 14;
+    -fx-font-size: 18;
+    -fx-rotate: 4;
+}
+
+
+.combo-box-base{
+    
+  -fx-background-color: green;
+  -fx-background-radius: 8;
+  -fx-border-radius: 7;
+  -fx-text-fill: red ; 
+  -fx-text-fill:white;
+}
+
+.combo-box-base *.arrow {
+    -fx-background-color: white; 
+}
+
+
+.combo-box .cell{
+    -fx-text-fill: white;
+    -fx-font-size: 16p;
+    -fx-font-weight: bold;
+}
+
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    
+} 

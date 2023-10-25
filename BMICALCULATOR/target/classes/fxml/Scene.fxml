@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: daf0db; -fx-border-width: 2; -fx-border-color: green;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.bmicalculator.FXMLController">
+    <children>
+      <Label fx:id="labelage" layoutX="18.0" layoutY="140.0" prefHeight="44.0" prefWidth="113.0" text="AGE" textFill="#00a419">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelweight" layoutX="18.0" layoutY="240.0" prefHeight="44.0" prefWidth="113.0" text="WEIGHT" textFill="#00a419">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelheight" layoutX="18.0" layoutY="190.0" prefHeight="44.0" prefWidth="113.0" text="HEIGHT" textFill="#00a419">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ageinput" layoutX="160.0" layoutY="140.0" prefHeight="44.0" prefWidth="230.0" style="-fx-background-radius: 8; -fx-border-radius: 7; -fx-border-color: green; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="heightinputft" layoutX="160.0" layoutY="190.0" prefHeight="44.0" prefWidth="113.0" promptText="FEET" style="-fx-background-radius: 8; -fx-border-radius: 7; -fx-border-color: green; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="weightinput" layoutX="160.0" layoutY="240.0" prefHeight="44.0" prefWidth="230.0" promptText="KG" style="-fx-background-radius: 8; -fx-border-radius: 7; -fx-border-color: green; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <Label layoutX="160.0" layoutY="355.0" prefHeight="44.0" prefWidth="162.0" text="IDEAL WEIGHT" textFill="#00a419">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="355.0" prefHeight="44.0" prefWidth="113.0" text="BMI" textFill="#00a419">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bmi" editable="false" layoutX="14.0" layoutY="403.0" prefHeight="44.0" prefWidth="113.0" style="-fx-background-radius: 8; -fx-border-radius: 7; -fx-border-color: green; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="idealweight" editable="false" layoutX="160.0" layoutY="403.0" prefHeight="44.0" prefWidth="162.0" style="-fx-background-radius: 8; -fx-border-radius: 7; -fx-border-color: green; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <Button fx:id="calculate" layoutX="41.0" layoutY="305.0" mnemonicParsing="false" onAction="#calculatebmi" prefHeight="44.0" prefWidth="420.0" text="Calculate BMI" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="heightinputinch" layoutX="279.0" layoutY="190.0" prefHeight="44.0" prefWidth="110.0" promptText="INCH" style="-fx-background-radius: 8; -fx-border-radius: 7; -fx-border-color: green; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <Label fx:id="labelage1" layoutX="14.0" layoutY="90.0" prefHeight="44.0" prefWidth="113.0" text="GENDER" textFill="#00a419">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="gender" layoutX="279.0" layoutY="90.0" onAction="#genderselection" prefHeight="44.0" prefWidth="110.0" promptText="SELECT">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </ComboBox>
+      <TextField fx:id="genderdis" editable="false" layoutX="160.0" layoutY="90.0" prefHeight="44.0" prefWidth="113.0" style="-fx-background-radius: 8; -fx-border-radius: 7; -fx-border-color: green; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets left="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="fatperdis" editable="false" layoutX="287.0" layoutY="465.0" prefHeight="113.0" prefWidth="200.0" promptText="Body Fat Percentage" style="-fx-border-color: green; -fx-background-radius: 10; -fx-border-radius: 9; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textareadisplay" editable="false" layoutX="14.0" layoutY="465.0" prefHeight="113.0" prefWidth="260.0" promptText="Health Condition" style="-fx-border-color: green; -fx-background-radius: 10; -fx-border-radius: 9; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="2.0" prefHeight="63.0" prefWidth="494.0" style="-fx-background-color: a9e1af;" text="BMI CALCULATOR">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
